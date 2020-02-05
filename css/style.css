@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Patua One', cursive;
+}
+
+/* utilities */
+
+#showcase .showcase-content .l-heading {
+    font-size: 5rem;
+    letter-spacing: 1.5px;
+    line-height: 1;
+}
+
+
+/* nav */
+
+#navcon {
+    display: flex;
+    justify-content: space-between;
+    background-color: #02040F;
+    opacity: 0.8; 
+    padding: 1.5rem;
+    position: sticky;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.green {
+    color: #93cb52;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+ul li a:hover {
+    background-color: #93cb52;
+}
+
+/* showcase */
+
+#showcase {
+    background-image: url("../images/showcase.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center/contain;
+    /* background-color: grey;
+    background-blend-mode: darken;
+    background-origin: border-box;     */
+    height: 120vh;
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#showcase .showcase-content p {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    line-height: 5;
+}
+
+#showcase .showcase-content .read {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: #93cb52;
+    font-size: 1.5rem;
+    border-radius: 10%;
+}
+
+#showcase .showcase-content .read:hover {
+    background-color: #a3cb52;
+}
+
+
+#seccon .sec-head{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+#seccon .item {
+    display: flex;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+}
+
+#seccon .items {
+    flex: 2;
+    padding: 2rem 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#seccon .items h1 {
+    padding: 1rem 0;
+}
+
+#seccon .items p {
+    font-size: 1.5rem;
+}
+
+#seccon .item .items i {
+    background-color: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+#about {
+    display: flex;  
+    height: 66vh; 
+}
+
+#about .img {
+    background-image: url("../images/people.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex: 1;
+    padding: 1rem;
+}
+
+#about .content {
+    flex: 1;
+    padding: 2rem 2rem;
+    background-color: #02040F;
+    opacity: 0.8;
+    color: #fff;
+}
+
+#about .content h1 {
+    font-size: 3rem;
+}
+
+#about .content p {
+    font-size: 1.8rem;
+    padding: 1.5rem 0;
+}
+
+#about .content ul {
+    display: flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+}
+
+#about .content ul .li-items-1 {
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#about .content ul .li-items {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+/* clients */
+
+#clients .ourclients {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+#clients .citems {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#clients .citems .clienti {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 8rem 0;
+}
+
+
+/* footer */
+
+#contact {
+    display: flex;
+    /* background-color: #93cb52; */
+}
+
+#contact .contact-form {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    padding: 2rem 2rem;
+    background-color: #93cb52;
+}
+
+#contact .contact-form h1 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    margin: 0 4rem;
+}
+
+#contact .contact-form form {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 4rem;
+}
+
+#contact .contact-form form label {
+    display: block;
+    padding: 1rem 0;
+}
+
+#contact .contact-form form .name input, #contact .contact-form form .mail input, #contact .contact-form form .phone input, #contact .contact-form form .msg input {
+    margin: 1rem 0;
+    width: 80%;
+    padding: 0.5rem 0;
+}
+
+#contact .contact-form form .btn {
+    width: 20%;
+    padding: 0.3rem 0;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#contact .map {
+    flex: 1;
+}
+
+#foot {
+    display: flex;
+    justify-content: center;
+    background-color: #02040F;
+    opacity: 0.8;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+}
