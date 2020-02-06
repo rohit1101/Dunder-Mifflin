@@ -6,35 +6,35 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 10px;
-    font-family: 'Patua One', cursive;
-}
-
-/* utilities */
-
-#showcase .showcase-content .l-heading {
-    font-size: 5rem;
-    letter-spacing: 1.5px;
-    line-height: 1;
-}
-
-
 /* nav */
 
 #navcon {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column wrap;
     background-color: #02040F;
     opacity: 0.8; 
-    padding: 1.5rem;
-    position: sticky;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* position: sticky; */
 }
 
 .logo {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    display: flex;
+    padding: 1rem 0;
+    /* align-self: center; */
 }
+
+.logo .mb {
+    margin-left: 0.5rem;
+}
+
+.logo .fas {
+    margin-right: 0.3rem;
+}
+
 
 .green {
     color: #93cb52;
@@ -43,32 +43,28 @@ html {
 ul {
     list-style-type: none;
     display: flex;
+    align-self: center;
+    padding: 1rem 0;
+    /* flex: 1; */
 }
 
 ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.8rem;
-    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    padding: 1rem 1rem;
     margin: 0 auto;
     border-radius: 10%;
 }
 
-ul li a:hover {
-    background-color: #93cb52;
-}
-
-/* showcase */
+/* Showcase */
 
 #showcase {
     background-image: url("../images/showcase.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center/contain;
-    /* background-color: grey;
-    background-blend-mode: darken;
-    background-origin: border-box;     */
-    height: 120vh;
+    background-position: center center;
+    height: 90vh;
 }
 
 #showcase .showcase-content {
@@ -81,73 +77,60 @@ ul li a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+#showcase .showcase-content .l-heading {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
 #showcase .showcase-content p {
-    font-size: 2rem;
-    letter-spacing: 0.5px;
-    line-height: 5;
+    font-size: 1.3rem;
+    line-height: 2;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
 #showcase .showcase-content .read {
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     background-color: #93cb52;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 10%;
 }
 
-#showcase .showcase-content .read:hover {
-    background-color: #a3cb52;
-}
 
+/* section */
 
 #seccon .sec-head{
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
     padding: 2rem;
     font-size: 2rem;
 }
 
 #seccon .item {
     display: flex;
+    flex-flow: column wrap;
     padding: 1rem 1rem;
     margin: 0 auto;
 }
 
-#seccon .items {
-    flex: 2;
-    padding: 2rem 2rem;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-#seccon .items h1 {
-    padding: 1rem 0;
-}
-
-#seccon .items p {
-    font-size: 1.5rem;
-}
-
-#seccon .item .items i {
-    background-color: #93cb52;
-    padding: 1rem;
-    border-radius: 50%;
-}
+/* about */
 
 #about {
     display: flex;  
-    height: 66vh; 
+    flex-flow: column;
+    height: 100vh; 
 }
 
 #about .img {
-    background-image: url("../images/people.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    flex: 1;
-    padding: 1rem;
+    display: none;
 }
 
 #about .content {
@@ -160,28 +143,21 @@ ul li a:hover {
 
 #about .content h1 {
     font-size: 3rem;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 #about .content p {
     font-size: 1.8rem;
     padding: 1.5rem 0;
+    text-align: justify;
 }
 
 #about .content ul {
     display: flex;
     flex-flow: column wrap;
     list-style-type: none;
-}
-
-#about .content ul .li-items-1 {
-    padding: 1rem 0;
-    font-size: 3rem;
-    font-weight: 500;
-}
-
-#about .content ul .li-items {
-    font-size: 1.8rem;
-    padding: 1rem 0;
+    text-align: center;
 }
 
 /* clients */
@@ -190,8 +166,8 @@ ul li a:hover {
     /* display: flex;
     justify-content: center; */
     text-align: center;
-    padding: 2rem;
     font-size: 3rem;
+    /* padding-top: 20rem; */
 }
 
 #clients .citems {
@@ -202,12 +178,12 @@ ul li a:hover {
 #clients .citems .clienti {
     display: block;
     margin: auto;
-    width: 40%;
-    padding: 8rem 0;
+    width: 50%;
+    padding: 5rem 0;
 }
 
 
-/* footer */
+/* Contact */
 
 #contact {
     display: flex;
@@ -218,51 +194,74 @@ ul li a:hover {
     display: flex;
     flex-flow: column;
     flex: 1;
-    padding: 2rem 2rem;
+    padding: 2rem 0;
     background-color: #93cb52;
 }
 
 #contact .contact-form h1 {
-    font-size: 2rem;
-    padding: 1rem 0;
-    margin: 0 4rem;
+    font-size: 1.5rem;
+    /* text-align: center; */
+    margin: 0 3rem;
+    padding: 2rem 1rem;
 }
 
 #contact .contact-form form {
     display: flex;
     flex-flow: column wrap;
-    margin: 0 4rem;
+    /* margin: 0 4rem; */
 }
 
 #contact .contact-form form label {
     display: block;
+    width: 50%;
     padding: 1rem 0;
     font-size: 1.5rem;
 }
 
 #contact .contact-form form .name input, #contact .contact-form form .mail input, #contact .contact-form form .phone input, #contact .contact-form form .msg input {
     margin: 1rem 0;
-    width: 80%;
+    width: 100%;
     padding: 0.5rem 0;
 }
 
-#contact .contact-form form .btn {
-    width: 20%;
-    padding: 0.3rem 0;
+#contact .contact-form form .msg textarea {
     margin: 1rem 0;
+    width: 100%;
+    padding: 0.5rem 0;    
+}
+
+#contact .contact-form form .btn {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
     text-align: center;
 }
 
+
 #contact .map {
-    flex: 1;
+    display: none;
 }
+
+/* footer */
 
 #foot {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #02040F;
     opacity: 0.8;
     color: #fff;
-    padding: 2rem 0;
-    font-size: 1.6rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 320px) {
+    #clients .ourclients {
+        /* display: flex;
+        justify-content: center; */
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 20rem;
+    }
 }
