@@ -1,4 +1,4 @@
 # Dunder-Mifflin
 A landing page made with Flexbox
 
-Google Maps api is hidden
+Google Maps api integration does not work.
